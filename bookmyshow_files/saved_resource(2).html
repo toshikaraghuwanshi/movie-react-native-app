@@ -1,0 +1,39 @@
+
+<!-- saved from url=(0012)about:srcdoc -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      img {
+        position: absolute;
+        object-fit: fill;
+        width: 100%;
+        height: 100%;
+        max-width: 100%;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <img id="js-promotion-banner" loading="lazy" onclick="handleBannerClick(event)" src="https://assets-in.bmscdn.com/promotions/cms/creatives/1654263693168_sunburnweb.jpg" alt="">
+    <script>
+      function handleBannerClick(event) {
+        event.preventDefault();
+        if ("https://in.bookmyshow.com/events/sunburn-goa-2022/ET00328681") {
+          let xhr = new XMLHttpRequest();
+          xhr.open("GET", "https://adtech-events.bookmyshow.com/adevent/v2/click?reqid=dd69e78e-a6e2-42a7-ad52-d7c34deb2f2d");
+          xhr.send();
+          window.open("https://in.bookmyshow.com/events/sunburn-goa-2022/ET00328681");
+        }
+      }
+	  if (!'https://in.bookmyshow.com/events/sunburn-goa-2022/ET00328681') {
+        var imgId = document.getElementById("js-promotion-banner");
+        if (imgId) {
+          imgId.style.cursor = "default";
+        }
+      }
+    </script>
+  
+</body></html>

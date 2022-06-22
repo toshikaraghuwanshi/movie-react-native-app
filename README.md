@@ -1,53 +1,44 @@
-# Movie React Native App
+# My Universal React Project
 
-Steps to run: \
-`yarn install` \
-`yarn web`
+<p>
+  <!-- iOS -->
+  <a href="https://itunes.apple.com/app/apple-store/id982107779">
+    <img alt="Supports Expo iOS" longdesc="Supports Expo iOS" src="https://img.shields.io/badge/iOS-4630EB.svg?style=flat-square&logo=APPLE&labelColor=999999&logoColor=fff" />
+  </a>
+  <!-- Android -->
+  <a href="https://play.google.com/store/apps/details?id=host.exp.exponent&referrer=blankexample">
+    <img alt="Supports Expo Android" longdesc="Supports Expo Android" src="https://img.shields.io/badge/Android-4630EB.svg?style=flat-square&logo=ANDROID&labelColor=A4C639&logoColor=fff" />
+  </a>
+  <!-- Web -->
+  <a href="https://docs.expo.dev/workflow/web/">
+    <img alt="Supports Expo Web" longdesc="Supports Expo Web" src="https://img.shields.io/badge/web-4630EB.svg?style=flat-square&logo=GOOGLE-CHROME&labelColor=4285F4&logoColor=fff" />
+  </a>
+</p>
 
+## 🚀 How to use
 
-Screenshot: \
-![screencapture-localhost-19006-2022-05-30-03_50_01](https://user-images.githubusercontent.com/2870345/170884483-9485c67e-a9ce-43ec-b6ac-6d3efce0dbd4.png)
+- Install packages with `yarn` or `npm install`.
+  - If you have native iOS code run `npx pod-install`
+- Run `yarn start` to start the bundler.
+- Open the project in a React runtime to try it:
+  - iOS: [Client iOS](https://itunes.apple.com/app/apple-store/id982107779)
+  - Android: [Client Android](https://play.google.com/store/apps/details?id=host.exp.exponent&referrer=blankexample)
+  - Web: Any web browser
 
+## Adding Native Code
 
+This project can be run from a web browser or the Expo client app. You may find that you want to add more native code later on. You can do this by ejecting the project and rebuilding it yourself.
 
-## React Native Mobile App
+- Run `yarn eject` to create the native projects.
+- You can still run your project in the web browser or Expo client, you just won't be able to access any new native modules you add.
 
-### Current Features:
-- Display a list of movies
-- The first movie is selected by default
-- Users can change movies by clicking on the movie name list.
-- Users can reserve a seat from the second section
-- After the seat reservation, the price is displayed.
+## Publishing
 
-### Todo:
-- Finish styling of the app.
-- Code formatting and move React Native components in separate files. 
-- Move movie data and other data in separate constant files. 
-- Get movie data via API
-- Write API in Next JS to return movie data
-- Host this app in App Center
-- Write Unit test cases
+- Deploy the native app to the App store and Play store using this guide: [Deployment](https://docs.expo.dev/distribution/app-stores/).
+- Deploy the website using this guide: [Web deployment](https://docs.expo.dev/distribution/publishing-websites/).
 
+## 📝 Notes
 
-
-
-## React web site
-### Current Features
-- Default first movie is selected on the first screen.
-- Users can reserve a seat from the right side section.
-- Users can change movies by clicking any movie name and reserving a seat from the right side section.
-- After seat reservation user would see the total price of seats booked.
-- The website is accessibility supported.
-
-### Todo
-- Mobile  and tablet design
-- Hosting in AWS S3
-- Move movie data and other data in separate constant files. 
-- Get Movies data from API using Fetch
-- Write Movies API in Next JS
-- Write unit test cases
-- Move React components into separate files
-
-
-![screencapture-localhost-3000-2022-05-30-03_27_45 (1)](https://user-images.githubusercontent.com/2870345/170884710-89220b22-6ef1-4f9c-b289-fd02d423ee24.png)
-
+- Learn more about [Universal React](https://docs.expo.dev/).
+- See what API and components are [available in the React runtimes](https://docs.expo.dev/versions/latest/).
+- Find out more about developing apps and websites: [Guides](https://docs.expo.dev/guides/).
